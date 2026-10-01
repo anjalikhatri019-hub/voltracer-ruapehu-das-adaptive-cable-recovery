@@ -7,7 +7,7 @@ This is **not eruption prediction**. The source contains earthquake-associated w
 ## Which ZIP is which?
 
 - `VOLTRACER_Eris_PRIVATE_INPUT_v1.zip` (550 MB): **organizer/platform upload only**. It contains hidden test targets, the private source map and ID salt. Do not publish it or provide it to solvers.
-- `VOLTRACER_Ruapehu_PARTICIPANT_v1.zip`: public prepared participant data and documentation; it contains no private answers, salt or source map. This is the file to publish as the source-verifiable dataset release.
+- `VOLTRACER_Ruapehu_PARTICIPANT_v1_1.zip`: public prepared participant data and documentation; it contains no private answers, salt or source map. This is the file to publish as the source-verifiable dataset release.
 
 The organizer uploads the private ZIP to the challenge creation form, pastes `src/prepare.py` in Prepare and `src/grade.py` in Grade, and uses `PROBLEM_DESCRIPTION.md` as the challenge description. Prepare accepts a ZIP file, opaque renamed upload file, or extracted root containing `manifest.csv` and the source manifest. It emits participant files into its public output and `answers.csv` into its private output. The platform may hold a full submission while grading a public or private answer subset; the grader supports that contract.
 
